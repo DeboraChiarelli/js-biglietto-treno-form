@@ -6,6 +6,23 @@
     <title>Prezzo biglietto Form</title>
 </head>
 <body>
-    
+    <section>
+        <div>
+            <input type="text" name="Km" id="distanceKm" placeholder="numero di chilometri che vuoi percorrere">
+            <input type="text" name="age" id="age" placeholder="età">
+            <p>
+                <select name="sale" id="sale">
+                    <option value="20">under18</option>
+                    <option value="0">Maggiorenni</option>
+                    <option value="40">over65</option>
+                </select>
+            </p>
+            <p>
+                <button id="price-calc">Calcola prezzo</button>
+            </p>
+        </div>
+        <div class="price">Prezzo Finale</div>
+    </section>
+    <script src="./app.js"></script>
 </body>
 </html>
