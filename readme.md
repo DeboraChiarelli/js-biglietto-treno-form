@@ -23,6 +23,7 @@ Solo una volta che il milestone 1 sarà completo e funzionante allora realizzere
         - recupero il valore presente nell'input e lo salvo in una variabile
 - Inserisco bottone nell'HTML
 - Inserisco select nell'HTML
+- Aggiungo addEventListener
 - Definisco prezzo per chilometro:
   - assegno alla variabile un valore
 - Assegno alla variabile per lo sconto da appliccare ai minorenni un valore:
@@ -37,6 +38,7 @@ Solo una volta che il milestone 1 sarà completo e funzionante allora realizzere
       - SE il passeggero sarà over 65
         - applicherò lo sconto per gli Over65
       - SE il passeggero è tra i 18 e i 65 anni
+
 - Formatto il prezzo con massimo due decimali
 - Stampo in pagina dati e output del prezzo finale:
     - inserisco nell'html un tag h1 con l'id scelto
