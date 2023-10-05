@@ -1,3 +1,8 @@
+//- Inserisco bottone nell'HTML
+//    - seleziono l'elemento input tramite ID
+//    - recupero il valore presente nell'input e lo salvo in una variabile
+const buttonDomElement = document.getElementById('price-calc');
+console.log(buttonDomElement);
 //- Insersco input nell'HTML:
 //- recupero il numero dei km inseriti dall'utente nel campo input:
 //    - seleziono l'elemento input tramite ID
@@ -9,29 +14,37 @@ console.log(inputDomElement);
 //    - recupero il valore presente nell'input e lo salvo in una variabile
 const inputDomElement2 = document.getElementById('age');
 console.log(inputDomElement2);
-//- Inserisco bottone nell'HTML
-//    - seleziono l'elemento input tramite ID
-//    - recupero il valore presente nell'input e lo salvo in una variabile
-const buttonDomElement = document.getElementById('price-calc');
-console.log(buttonDomElement);
 //- Inserisco select nell'HTML
-//- Definire prezzo per chilometro:
-//  - assegnare alla variabile un valore
+//- Recupero select dal DOM
+let selectDomElement = document.getElementById('sale');
+console.log(selectDomElement.value);
+//- Aggiungo addEventListener
+buttonDomElement.addEventListener('click', function(){
+    //- Definire prezzo per chilometro:
+    //  - assegnare alla variabile un valore
     const payForKm = 0.21;
-//- Assegnare alla variabile per lo sconto da appliccare ai minorenni un valore:
-let percForUnder18 = 20;
-//- Assegnare alla variabile per lo sconto da applicare agli over 65 un valore:
-let percForOver65 = 40;
-//- Calcolare il prezzo pieno del biglietto:
-const fullPrice = distanceKm * payForKm; 
-//- calcolare lo sconto del 20% per i minorenni:
-let saleForUnder18 = (fullPrice * percForUnder18) / 100;
-console.log(saleForUnder18);
-//- calcolare lo sconto del 40% per gli over 65:
-let saleForOver65 = (fullPrice * percForOver65) / 100;
-console.log(saleForOver65);
-//- Calcolare il prezzo finale del viaggio:
-let finalPrice;
+    //- Assegnare alla variabile per lo sconto da appliccare ai minorenni un valore:
+    let percForUnder18 = 20;
+    //- Assegnare alla variabile per lo sconto da applicare agli over 65 un valore:
+    let percForOver65 = 40;
+    //- Calcolare il prezzo pieno del biglietto:
+    const fullPrice = distanceKm * payForKm; 
+    //- calcolare lo sconto del 20% per i minorenni:
+    let saleForUnder18 = (fullPrice * percForUnder18) / 100;
+    console.log(saleForUnder18);
+    //- calcolare lo sconto del 40% per gli over 65:
+    let saleForOver65 = (fullPrice * percForOver65) / 100;
+    console.log(saleForOver65);
+    //- recupero dall'input il valore dell'attributo value
+    const km = parseFloat(inputDomElement.value);
+    console.log(km);
+    //- recupero dall'input il valore dell'attributo value
+    const age = parseFloat(inputDomElement2.value);
+    console.log(age);
+    //- Calcolare il prezzo finale del viaggio:
+    let finalPrice;
+    finalPrice = km * payForKm;
+    console.log(finalPrice);
 //  - Applicare sconto del 20% per gli under 18:
 //      - SE il passeggero sarà minorenne
         if (age < 18) {
@@ -44,11 +57,13 @@ let finalPrice;
         finalPrice = fullPrice;
         }
         console.log(finalPrice);
-//- Aggiungere cifra con massimo due decimali
-finalPrice = (finalPrice.toFixed(2));
-//- Stampare un messaggio dentro h1:
+    //- Aggiungere cifra con massimo due decimali
+    finalPrice = (finalPrice.toFixed(2));
+    //- Stampare un messaggio dentro h1:
 //    - inserire nell'html un tag h1 con l'id scelto
 //    - recuperare con js l'elemento del dom con l'id scelto
-        const ticketPriceDomElement = document.getElementById('ticketprice'); 
+    const ticketPriceDomElement = document.getElementById('ticketprice'); 
 //    - modificare l'innerHTML dell'h1 con il valore della variabile dell'id scelto
         ticketPriceDomElement.innerHTML = finalPrice;
+})
+
