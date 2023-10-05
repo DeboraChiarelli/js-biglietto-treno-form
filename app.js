@@ -9,11 +9,7 @@ console.log(buttonDomElement);
 //    - recupero il valore presente nell'input e lo salvo in una variabile
 const inputDomElement = document.getElementById('distanceKm');
 console.log(inputDomElement);
-//- recupero l'età del passeggero inserita dall'utente nel campo input:
-//    - seleziono l'elemento input tramite ID
-//    - recupero il valore presente nell'input e lo salvo in una variabile
-const inputDomElement2 = document.getElementById('age');
-console.log(inputDomElement2);
+
 //- Inserisco select nell'HTML
 //- Recupero select dal DOM
 let selectDomElement = document.getElementById('sale');
@@ -23,9 +19,6 @@ buttonDomElement.addEventListener('click', function(){
     //- recupero dall'input il valore dell'attributo value
     const km = parseFloat(inputDomElement.value);
     console.log(km);
-  //- recupero dall'input il valore dell'attributo value
-    const age = parseFloat(inputDomElement2.value);
-    console.log(age);
     //- Definire prezzo per chilometro:
     //  - assegnare alla variabile un valore
         const payForKm = 0.21;
@@ -44,10 +37,7 @@ buttonDomElement.addEventListener('click', function(){
       console.log(saleForOver65);
     
     //- Calcolare il prezzo finale del viaggio:
-    //let finalPrice;
-    //finalPrice = km * payForKm;
-    //console.log(finalPrice);
-//  - Applicare sconto del 20% per gli under 18:
+//      - Applicare sconto del 20% per gli under 18:
 //      - SE il passeggero sarà minorenne
         if (age < 18) {
 //      - applicherò lo sconto per gli Under18

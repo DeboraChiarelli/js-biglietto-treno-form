@@ -23,6 +23,7 @@ Solo una volta che il milestone 1 sarà completo e funzionante allora realizzere
         - recupero il valore presente nell'input e lo salvo in una variabile
 - Inserisco bottone nell'HTML
 - Inserisco select nell'HTML
+- Recupero select dal DOM
 - Aggiungo addEventListener
 - Definisco prezzo per chilometro:
   - assegno alla variabile un valore
