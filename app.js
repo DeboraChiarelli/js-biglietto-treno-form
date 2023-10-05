@@ -8,8 +8,12 @@ console.log(inputDomElement);
 //    - seleziono l'elemento input tramite ID
 //    - recupero il valore presente nell'input e lo salvo in una variabile
 const inputDomElement2 = document.getElementById('age');
-console.log(inputDomElement2)
+console.log(inputDomElement2);
 //- Inserisco bottone nell'HTML
+//    - seleziono l'elemento input tramite ID
+//    - recupero il valore presente nell'input e lo salvo in una variabile
+const buttonDomElement = document.getElementById('price-calc');
+console.log(buttonDomElement);
 //- Inserisco select nell'HTML
 //- Definire prezzo per chilometro:
 //  - assegnare alla variabile un valore
