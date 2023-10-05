@@ -38,7 +38,7 @@ Solo una volta che il milestone 1 sarà completo e funzionante allora realizzere
         - applicherò lo sconto per gli Over65
       - SE il passeggero è tra i 18 e i 65 anni
 - Formatto il prezzo con massimo due decimali
-- Stampo in pagina: dati e output del prezzo finale
+- Stampo in pagina dati e output del prezzo finale:
     - inserisco nell'html un tag h1 con l'id scelto
     - recupero con js l'elemento del DOM con l'id scelto
     - modifico l'innerHTML dell'h1 con il valore della variabile dell'id scelto
